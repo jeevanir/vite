@@ -1,6 +1,11 @@
+/** @type {import('tailwindcss').Config} */
 export default {
-  plugins: {
-    // using postcss tailwind as we want to test postcss integration
-    '@tailwindcss/postcss': {},
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
   },
+  plugins: [],
 }
